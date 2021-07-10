@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        body { font-family: cursive, Helvetica, serif; 
+            font-size: 100%;
+            background-color:#0012b8;}
+        h1 {text-align: center;}
+        body {text-align: center;}
+        .container {  text-align: center ;
+            margin-left: 30%;
+            margin-right: 30%;
+            padding: 60px;  
+            background-color: rgb(0, 160, 27); 
+            border-style:solid;
+            border-width: 15px;
+            border-style: inside;
+            border-color:#ffffff; }  
+        input[type=text], input[type=password], textarea {  
+                width: 70%;  
+                padding: 15px;  
+                margin: 5px 0 15px 0;  
+                display: inline-block;  
+                border: 2px solid black; 
+                border-radius: 15px; 
+                background: #ffffff; }  
+        
+        .submitbtn {  
+            background-color: #0012b8;  
+            color: rgb(255, 255, 255);  
+            border-radius: 15px;
+            padding: 16px 20px;  
+            margin: 8px 0;  
+            border: 4px solid #ffffff;  
+            cursor: pointer;  
+            width: 30%;  
+            opacity: 0.9;  
+            }  
+    </style>
+</head>
+<body>
+    <div class="container"> 
+    <h1>SIGN UP FORM</h1>
+    <form>
+        <input type="text" id="name" name="Name" placeholder="Name"required><br>
+        <br> <input type="text" id="email" name="Email" placeholder="Email"required><br>
+        <br> <input type="text" id="address" name="Address" placeholder="Address"required><br>
+        <br> <input type="text" id="phone" name="Phone no." placeholder="Phone no."required><br></form>
+        <br><input type="radio" id="hardw" name="zairza_wing" value="Hardware">
+            <label for="hardware">Hardware</label>
+            <input type="radio" id="softw" name="zairza_wing" value="Software">
+            <label for="software">Software</label>
+            <input type="radio" id="des" name="zairza_wing" value="Design">
+            <label for="design">Design</label><br>
+            <br>Choose a skill <select id="Course" name="HTML">
+            <option value="HTML">HTML</option>
+            <option value="Java">Java</option>
+            <option value="IOT">IOT</option>
+            <option value="UI/UX">UI/UX</option>
+        </select><br>
+        <br> <input type="password" id="pswd" name="psw" placeholder="Password" required><br>
+        <br> <input type="password" id="cpswd" name="cpsw" placeholder="Confirm Password" required><br>
+        <br> <input type="submit" class="submitbtn" value="Send">
+    </div>  
+    </form>
+</body>
+</html>
